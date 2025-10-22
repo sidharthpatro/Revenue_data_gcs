@@ -1,0 +1,20 @@
+dbt_project/
+│
+├── models/
+│   ├── staging/
+│   │   ├── stg_salesforce_accounts.sql
+│   │   ├── stg_salesforce_revenue.sql
+│   │   ├── stg_churn_api.sql
+│   │
+│   ├── intermediate/
+│   │   ├── int_customer_value.sql
+│   │   ├── int_customer_churn.sql
+│   │
+│   └── marts/
+│       └── mart_churn_analysis.sql
+│
+├── seeds/
+│
+├── macros/
+│
+└── analyses/
