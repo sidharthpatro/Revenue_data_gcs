@@ -1,0 +1,11 @@
+models:
+  - name: mart_churn_analysis
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+      - name: churn_reason_category
+        tests:
+          - accepted_values:
+              values: ['Price', 'Service', 'Competitor', 'Product Issues']
