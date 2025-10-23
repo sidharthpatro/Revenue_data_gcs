@@ -1,0 +1,11 @@
+# upload_to_s3.py
+import boto3
+from pathlib import Path
+
+s3 = boto3.client('s3')  # ensure AWS creds in env or ~/.aws/credentials
+bucket = "your-bucket-name"
+local_file = "OnlineRetailII.csv"
+s3_key = "datasets/online_retail/OnlineRetailII.csv"
+
+s3.upload_file(local_file, bucket, s3_key)
+print("Uploaded:", s3_key)
